@@ -151,7 +151,8 @@ main {
     color: #757575;
 }
 
-.main-currency-table {
+.main-currency-table,
+.main-comisiones-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -166,6 +167,16 @@ main {
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
+    text-align: start;
+    margin-left: calc(5% + 10px);
+}
+
+.main-currency-table .comisiones-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
     text-align: start;
     margin-left: calc(5% + 10px);
 }
