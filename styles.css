@@ -440,7 +440,7 @@ main {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    /*margin: 0 40px;*/
+    margin: 0 50px;
 }
 
 .plans-container--card {
@@ -567,4 +567,26 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-plans--container .scroll-button {
+    position: relative;
+    top: -175px;
+    width: 50px;
+    padding: 0px 2px;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: sans-serif;
+    color: var(--grey);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--just-white);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }

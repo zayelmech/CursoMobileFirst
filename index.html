@@ -11,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+    <link rel="shortcut icon" href="./assets/icons/batata.svg" type="image/x-icon">
 </head>
 
-<body>
+<body onresize="checkButtonsNecesity()">
     <header>
         <img src="./assets/img/logo.svg" alt="">
         <div class="header--title-container">
@@ -135,16 +136,7 @@
                 <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                 <p>Cualquier plan te da acceso completo a nuestra plataforma</p>
             </div>
-            <section class="plans-container--slider">
-                <article class="plans-container--card">
-                    <p class="plan-type recommended">Recomendado</p>
-                    <div class="plan-info-container">
-                        <h3 class="plan-card--title">Pago Anual</h3>
-                        <p class="plan-card--price"><span>$</span>99</p>
-                        <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
-                        <button class="plan-card--ca">Escoger este <span></span></button>
-                    </div>
-                </article>
+            <section class="plans-container--slider" id="seccion_scroleable">
 
                 <article class="plans-container--card">
                     <p class="plan-type basico">Básico</p>
@@ -156,6 +148,15 @@
                     </div>
                 </article>
 
+                <article class="plans-container--card" id="main_tarjeta">
+                    <p class="plan-type recommended">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card--ca">Escoger este <span></span></button>
+                    </div>
+                </article>
 
                 <article class="plans-container--card unlimited-plan">
                     <p class="plan-type elmeromero">Ilimitado</p>
@@ -167,6 +168,11 @@
                     </div>
                 </article>
             </section>
+            <section class="botones">
+                <button class="scroll-button" onclick="scrollLeftNx()" id="bLess"><</button>
+                <button class="scroll-button" onclick="scrollRightNx()" id="bMore">></button>
+            </section>
+
         </section>
     </main>
     <footer>
@@ -187,6 +193,7 @@
             <img src="./assets/img/logo-footer.svg" alt="Logo de batatabit 2020">
         </section>
     </footer>
+    <script src="./script.Js"></script>
 </body>
 
 </html>
