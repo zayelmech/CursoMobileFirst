@@ -160,6 +160,7 @@ main {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    overflow-y: hidden;
 }
 
 .main-currency-table {
