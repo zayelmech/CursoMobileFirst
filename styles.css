@@ -429,11 +429,15 @@ main {
     margin: 50px auto 0;
     padding: 0 15px;
     background-color: var(--just-white);
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.recommended {
+.unlimited-plan {
+    background-color: var(--warm-black);
+}
+
+.plan-type {
     position: absolute;
     width: 120px;
     height: 31px;
@@ -441,9 +445,21 @@ main {
     left: calc(50% - 60px);
     font-size: 1.2rem;
     padding: 6px;
-    background-color: var(--bitcoin-orange);
     border-radius: 8px;
     color: var(--just-white);
+}
+
+.recommended {
+    background-color: var(--bitcoin-orange);
+}
+
+.basico {
+    background-color: var(--secondary-blue);
+}
+
+.elmeromero {
+    background-color: var(--grey);
+    color: var(--black);
 }
 
 .plan-card--title {
@@ -471,4 +487,30 @@ main {
 .plan-card--saving {
     font-size: 1.2rem;
     color: #757575;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 25px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.18);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
