@@ -441,6 +441,8 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     margin: 0 50px;
+    overflow-y: hidden;
+    /* Hide scrollbars */
 }
 
 .plans-container--card {
@@ -589,4 +591,5 @@ footer .left ul {
     background-color: var(--just-white);
     box-shadow: 0 4px 3px rgba(0, 0, 0, 0.16);
     cursor: pointer;
+    outline: none;
 }
